@@ -1,10 +1,9 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <table class="table">
-                <thead>
+            <table class="table table-striped table-primary">
+                <thead class="thead-success">
                   <tr>
-                    <th scope="col">Course Id</th>
                     <th scope="col">Course Title</th>
                     <th scope="col">Course Description</th>
                     <th scope="col">Course Duration</th>
@@ -14,7 +13,6 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let i of courseData">
-                    <td>{{i._id}}</td>
                     <td>{{i.courseTitle}}</td>
                     <td>{{i.courseDescription}}</td>
                     <td>{{i.courseDuration}}</td>
